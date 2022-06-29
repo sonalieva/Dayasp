@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(58, 52, 52);
+ 
+    .navbar{
+      
+        .container-fluid{
+            a{
+                font-weight: 900;
+                font-style: normal;
+                padding-left: 400px;
+                color: white;
+            }
+            .navbar-nav{
+                padding-left: 400px;
+                .nav-item{
+                    
+                    
+                    a{
+                        justify-content: space-between;
+                        margin-left: 20px;
+                        color: white;
+                        // color: white;
+                        &:hover{
+                            color: blue;
+                            background-color: red
+                        }   
+                      
+                    }
+                    .active{
+                        background-color: red;
+                    }
+                    
+                    
+                }
+            }
+        }
+    }
+}
+main{
+    #hero{
+        background-image: url(/assets/images/hero-bg.jpg);
+        height: 930px;
+         .container{
+             .row{
+                 .hero-item{
+                     color: white;
+                     padding-top: 480px;
+                     
+                     .herobtn{
+                         border: 2px solid white;
+                         background-color: rgb(95, 91, 91);
+                         color: white;
+                         padding: 10px 28px;
+                         font-size: 14px;
+                         &:hover{
+                             background-color: red;
+                         }
+
+                     }
+                   }
+
+                }
+             }
+         
+    }
+    #pricing{
+        .container{
+            .head-item{
+                h1{
+                    text-shadow: -20px -20px rgb(189, 185, 185);
+                    padding-top: 25px;
+                }
+            }
+           .row{
+               .col-md-4{
+                   border-radius: 5px;
+                   color: white;
+                   background-color: rgb(224, 212, 212);
+                   margin: 5px;
+                   max-width: 400px;
+                   max-height: 600px;
+                   .pricingbtn{
+                       border: none;
+                       color: white;
+                       background-color: red;
+                       margin-bottom: 15px;
+                   }
+               }
+               .active{
+                   background-color: red;
+                   &:hover{
+                    .pricingbtn{
+                        color: red;
+                        background-color: white;
+                    }
+
+                   }
+               }
+           }
+        }
+    }
+    #team{
+        .container{
+            .team-item{
+                h1{
+                    text-shadow: -20px -20px rgb(189, 185, 185);
+                    padding-top: 25px;
+                }
+            }
+            .row{
+                .col-md-4{
+                 height: 350px;
+                 width: 400px;
+                    .team-img{
+                        padding-top: 40px;
+                        img{
+                            border-radius: 50%;
+                            width: 100px;
+                            
+                        }
+                    }
+                    .box-item{
+                        h4{
+                            padding-top: 20px;
+                        }
+                        h6{
+                            // padding-top: 20px;
+                            font-size: x-small;
+                        }
+                        .icons{
+                            padding-left: 150px;
+                             color: gray;
+ 
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    #contact{
+        .container{
+            .contact-item{
+                h1{
+                    text-shadow: -20px -20px rgb(189, 185, 185);
+                    padding-top: 25px;
+               }
+           }
+            .row{
+                .boxes{
+                    height: 120px;
+                    h4{
+                        padding-top: 40px;
+                        color: gray;
+                    }
+                   
+                }
+            }
+        }
+        
+    }
+    #map{
+        .container{
+            .row{
+                .col-md-6{
+                  padding-top: 30px;  
+
+                }
+                form{
+                    .btn{
+                        background-color: red;
+                        border: none;
+                        border-radius: 0;
+                        margin-left: 180px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+footer{
+    background-color: black;
+    .container{
+        .row{
+            .footer-content{
+                border-top: 2px solid red;
+                background-color: rgb(77, 73, 73);
+                color: white;
+                padding-top: 40px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                .icons{
+                    padding-left: 80px;
+                    
+                }
+
+            }
+        }
+    }
+
+}

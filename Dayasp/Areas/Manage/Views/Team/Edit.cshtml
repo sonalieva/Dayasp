@@ -1,0 +1,67 @@
+﻿@model Team
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <form asp-action="edit" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label asp-for="FullName" class="form-label">FullName </label>
+                    <input asp-for="FullName" class="form-control" id="fullname">
+                    <span asp-validation-for="FullName"></span>
+
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Profession" class="form-label">Profession </label>
+                    <input asp-for="Profession" class="form-control" id="profession">
+                    <span asp-validation-for="Profession"></span>
+
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Desc" class="form-label">Desc </label>
+                    <input asp-for="Desc" class="form-control" id="DESC">
+                    <span asp-validation-for="Desc"></span>
+
+                </div>
+                <div class="mb-3">
+                    <label asp-for="FbUrl" class="form-label">FbUrl </label>
+                    <input asp-for="FbUrl" class="form-control" id="fburl">
+                    <span asp-validation-for="FbUrl"></span>
+
+                </div>
+                <div class="mb-3">
+                    <label asp-for="TwitUrl" class="form-label">TwitUrl </label>
+                    <input asp-for="TwitUrl" class="form-control" id="twiturl">
+                    <span asp-validation-for="TwitUrl"></span>
+
+                </div>
+                <div class="mb-3">
+                    <label asp-for="LinkUrl" class="form-label">LinkUrl </label>
+                    <input asp-for="LinkUrl" class="form-control" id="linkurl">
+                    <span asp-validation-for="LinkUrl"></span>
+
+                </div>
+                <div class="mb-3">
+                    <label asp-for="InsUrl" class="form-label">InsUrl </label>
+                    <input asp-for="InsUrl" class="form-control" id="insurl">
+                    <span asp-validation-for="InsUrl"></span>
+
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="ImageFile" class="form-label">ImageFile </label>
+                    <input asp-for="ImageFile" class="form-control" id="imagefile">
+                    <span asp-validation-for="ImageFile"></span>
+
+                </div>
+
+
+
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+

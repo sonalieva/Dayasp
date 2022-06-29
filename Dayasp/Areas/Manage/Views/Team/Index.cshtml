@@ -1,0 +1,56 @@
+﻿@model List<Team>
+@{
+    ViewData["Title"] = "Index";
+    int count = 0;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <a asp-action="create" class="btn btn-primary">Create</a>
+        </div>
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">FullName</th>
+                        <th scope="col">Profession</th>
+                        <th scope="col">Desc</th>
+                        <th scope="col">FbUrl</th>
+                        <th scope="col">InsUrl</th>
+                        <th scope="col">LinkUrl</th>
+                        <th scope="col">TwitUrl</th>
+                        <th scope="col">Actions</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var tm in Model)
+                    {
+                        count++;
+                    <tr>
+                        <th scope="row">@count</th>
+                        <td>@tm.FullName</td>
+                        <td>@tm.Profession</td>
+                        <td>@tm.Desc</td>
+                        <td>@tm.FbUrl</td>
+                        <td>@tm.InsUrl</td>
+                        <td>@tm.LinkUrl</td>
+                        <td>@tm.TwitUrl</td>
+                        <td>
+                            <img src="~/manage/uploads/teams/tm.Image" />
+                        </td>
+                        <td>
+                            <a asp-action="edit" class="btn btn-warning">Edit</a>
+                            <a asp-action="delete" class="btn btn-danger">Delete</a>
+                        </td>
+
+                    </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
